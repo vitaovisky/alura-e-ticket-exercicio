@@ -14,14 +14,17 @@ function comprar(){
 function validarCadeira(tipoDeCadeira, quantidade){
     if(tipoDeCadeira == 'pista' && quantidade>0 && quantidade<=pista){
         pista = pista - quantidade;
+        alert('Quantidade comprada com sucesso!');
     }else if(tipoDeCadeira == 'superior' && quantidade>0 && quantidade<=superior){
         superior = superior - quantidade;
+        alert('Quantidade comprada com sucesso!');
     }else if(tipoDeCadeira == 'inferior' && quantidade>0 && quantidade<=inferior){
         inferior = inferior - quantidade;
+        alert('Quantidade comprada com sucesso!');
     }else{
        alert('Valor de compra inválido!')
     }
-    atualizarValores (pista, superior, inferior)
+    atualizarValores (pista, superior, inferior);
 }
 
 function atualizarValores (pista, superior, inferior){
